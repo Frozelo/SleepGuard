@@ -17,7 +17,6 @@ magic-filter==1.0.12
 Mako==1.3.0
 MarkupSafe==2.1.3
 multidict==6.0.4
-numpy==1.26.2
 pycparser==2.21
 pydantic==2.3.0
 pydantic_core==2.6.3
