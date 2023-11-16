@@ -73,7 +73,8 @@ async def send_random_value(callback: types.CallbackQuery):
 
         if sleep_record:
             start_time = sleep_record.start_time
-            end_time = datetime.now()
+            lat, long = get_coordinates_from_db(tg_id)
+            end_time = get_time_from_location(lat, long)
             sleep_duration = end_time - start_time
             session.delete(sleep_record)
             session.commit()
